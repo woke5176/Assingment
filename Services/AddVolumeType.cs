@@ -8,7 +8,7 @@ namespace Assingment2.Services
 {
     internal class AddVolumeType
     {
-        private static AddVolume addVolume;
+        private static AddVol addVolume;
 
 
     public AddVolumeType()

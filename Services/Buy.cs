@@ -29,19 +29,7 @@ namespace Assingment2.Services
             this.status = TransactionStatus.IN_PROGRESS;
         }
 
-        /**
-         * @return Return the Status of the buy transaction
-         */
-        public TransactionStatus getStatus()
-        {
-            return status;
-        }
-
-
-        public void setStatus(TransactionStatus status)
-        {
-            this.status = status;
-        }
+   
 
 
         public Coin getCoin()
@@ -75,15 +63,6 @@ namespace Assingment2.Services
         {
             this.walletAddress = walletAddress;
 
-             String toString()
-            {
-                return "Buy{" +
-                        "coin=" + coin +
-                        ", quantity=" + quantity +
-                        ", walletAddress='" + walletAddress + '\'' +
-                        ", status=" + status +
-                        '}';
-            }
         }
     }
 }

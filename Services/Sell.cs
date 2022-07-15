@@ -17,12 +17,11 @@ namespace Assingment2.Services
        
         public Sell(List<transacted> transact) 
         {
-        if (Transaction.coins_symbolised.Contains((String)transact["coin"]
-            this.coin = Transaction.symbolWiseCoinMap.get((String)transact["coin"]);
-        else
-            throw new CoinNotFoundException("Coin not Found for the given Symbol: " + obj.get("coin"));
-        this.walletAddress = (String) obj.get("wallet_address");
-        this.quantity = (Long) obj.get("quantity");
+        if (Transaction.coins_symbolised.Contains(transact["coin"])
+            this.coin = Transaction.coins_symbolised.transact["coin"]);
+       
+        this.walletAddress = (String)transact["wallet_address"];
+        this.quantity = transact["quantity"];
         this.status = TransactionStatus.IN_PROGRESS;
     }
 
